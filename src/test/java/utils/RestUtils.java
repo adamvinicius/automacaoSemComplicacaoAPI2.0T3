@@ -28,7 +28,9 @@ public class RestUtils {
                 .body(json)
                 .when()
                 .post(endpoint)
-                .thenReturn();
+                .then()
+                .log().all()
+                .extract().response();
     }
 
     public static Response get(Map<String, String> header, String endpoint) {
