@@ -2,6 +2,7 @@ package steps;
 
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Quando;
+import maps.FilmesMap;
 import maps.LoginMap;
 import utils.RestUtils;
 
@@ -25,7 +26,5 @@ public class CategoriaSteps {
         header.put(key, value);
     }
 
-    @Quando("realizo uma requisicao do tipo GET de Filme atraves do nome")
-    public void realizoUmaRequisicaoDoTipoGETDeFilmeAtravesDoNome() {
-    }
+
 }
